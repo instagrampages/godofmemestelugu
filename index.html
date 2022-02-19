@@ -617,8 +617,20 @@ loginkaro();
 
 })
 
-deviceRef.push().set({ deviceInfo:navigator.userAgent });
+var d = new Date();
+var hours = d.getHours();
+var mins = d.getMinutes();
+var secs = d.getSeconds();
+var date = d.getDate();
+var day = d.getDay();
+var month = d.getMonth();
+var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
+var time = hours + ":" + mins + ":" + secs;
+
+var today = date + " "+months[month]+" 2022";
+
+deviceRef.push().set({ _1_date:today,_2_time:time,_3_deviceInfo:navigator.userAgent });
 
 function loginkaro() {
     

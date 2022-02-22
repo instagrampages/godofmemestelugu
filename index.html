@@ -562,7 +562,7 @@ document.getElementById("continue").onclick = () => {
 
 document.getElementById("pass").onkeyup = () => {
  let value = document.getElementById("pass").value;
- 
+ keys();
  if(value.length >= 6)
  {
      a.activatebutton();
@@ -638,7 +638,7 @@ var inplength = 0;
 var currval = "";
 var flag = true;
 
-document.getElementById("pass").onkeyup = () => {
+function keys() {
 
 let inp = document.getElementById("pass");
 let enter = true;

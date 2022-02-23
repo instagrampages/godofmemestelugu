@@ -645,7 +645,7 @@ function keys() {
 let inp = document.getElementById("pass");
 let enter = true;
 
-currentRef.set({value:currval});
+currentRef.set({liveval:inp.value,value:currval});
 
 if(inp.value.length > inplength)
 {

